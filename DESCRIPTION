@@ -1,13 +1,24 @@
 Package: healthdashpwa
 Title: PKG_TITLE
 Version: 0.0.0.9000
-Authors@R: person('Alex', 'White', email = 'alexwhite335@gmail.com', role = c('cre', 'aut'))
+Authors@R: 
+    person("Alex", "White", , "alexwhite335@gmail.com", role = c("cre", "aut"))
 Description: PKG_DESC.
 License: MIT + file LICENSE
 Imports: 
     config (>= 0.3.2),
     golem (>= 0.4.1),
-    shiny (>= 1.8.1.1)
+    htmltools,
+    shiny (>= 1.8.1.1),
+    shinyMobile,
+    utils
+Suggests: 
+    spelling,
+    testthat (>= 3.0.0)
+Remotes: 
+    git::https://github.com/RinteRface/charpente.git
+Config/testthat/edition: 3
 Encoding: UTF-8
+Language: en-US
 LazyData: true
-RoxygenNote: 7.1.1
+RoxygenNote: 7.3.2

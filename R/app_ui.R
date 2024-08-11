@@ -9,8 +9,9 @@ app_ui <- function(request) {
     # Leave this function for adding external resources
     golem_add_external_resources(),
     # Your application UI logic
-    fluidPage(
-      h1("healthdashpwa")
+    shinyMobile::f7Page(
+      h1("healthdashpwa"),
+      allowPWA = T
     )
   )
 }
